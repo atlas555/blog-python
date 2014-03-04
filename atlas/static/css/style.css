@@ -1,0 +1,895 @@
+/*
+
+	Design by Atlas 晓
+	http://zhangxiaolong.org
+	
+*/
+
+* { padding: 0; margin: 0 }
+
+body { 
+	margin: 0 auto; 
+	padding: 0; background: #FFF url(../images/topbg.jpg) repeat-x top; 
+	font: .8em Verdana, Arial, Sans-Serif; 
+	line-height: 1.4em;
+	color : #000 
+}
+
+.content { 
+	margin: 0 auto; 
+	padding: 0; 
+	width: 900px;	
+	background: transparent url(../images/imgtop.jpg) no-repeat top center 
+}
+
+#top {   width: 900px; height: 111px }
+#part1 {	height: 72px;	width: 800px;	margin: 0;	padding: 0 }
+#top h1 { padding: 25px 0 0 0px; color: #555; font-size: 3.0em; background: transparent }
+#top h1 a { color: #555; text-decoration: none; background: transparent }
+#top h2 { padding: 0px 0 0 0px; background: transparent; color: #C25E5E; font-size: 130%; font-family:  Arial, Verdana, Helvetica, Sans-Serif }
+#top .padding { padding-top: 5px }
+
+/* custom search box ************/
+#search { float: right; padding: 25px 0px 0px 0px; margin: 0; background: transparent }
+#search input.text {
+	background-image: url(../images/searchbox.gif);
+	width: 126px;
+	height: 13px;
+	border: 0;
+	padding-left: 5px;
+	padding-top: 2px;
+	font-size: 0.9em
+}
+#search input.searchbutton { border:0; background: transparent; color: #666; font-size: 10px; font-weight: bold; cursor: pointer }
+
+
+/* BREADCRUMS PART ***************************************/
+#breadcrumbs{
+	height: 28px;
+	background: transparent;
+	width: 900px;
+	margin: 10px 0;
+	color: #aaa;
+	padding-left: 0px;
+	
+	font-size: 0.8em
+}
+#breadcrumbs a { text-decoration: none }
+
+/* TOP MENU PART PART ------ **********************************/
+#topmenu { float: right; margin: 0; padding: 0; background: transparent; height: 31px; width: 800px }
+#topmenu  ul { list-style: none; padding: 9px 0; margin: 0; float: right; background-color: transparent }
+#topmenu li {
+   width: auto !important;
+   width: 0%;
+   float: left;
+   margin: 0;
+   font-size: 10px;
+   line-height: 30px;
+   white-space: nowrap;
+   background: url(../images/menul_a.gif) top left no-repeat;
+   background-color: transparent; 
+   list-style: none;
+   padding-right: 2px
+}
+
+#topmenu a {
+   font-family: Verdana, Arial, Sans-Serif;
+   font-size: 1.1em;
+   display: block;
+   padding-left: 0px;
+   padding-right: 10px;
+   text-decoration: none;
+   color: #FFF;
+   background: url(../images/menur_a.gif) top right no-repeat;
+   margin-top: 0px;
+   margin-left: 9px
+}
+
+#topmenu a.current { font-weight: bold }
+
+
+#footer { clear: both; border-top: 2px dotted #e5e5e5; margin: 0 0 3em 0; color: #777; font-size: 0.8em; background: #FFF }
+#footer .right  { float: right; text-align: right; background: #FFF; }
+#footer a { text-decoration: none; background: #FFF }
+
+/* SNEWS */
+fieldset { border: 1px solid #ddd; padding: 10px 8px; margin: 0 0 8px 0; background: #f5f5f5; color: #000 }
+input { padding: 3px; margin: 0; border: 1px solid #BBB; margin-top: 5px }
+textarea { width: 97%; height: 20em; padding: 3px; border: 1px solid #BBB }
+.comment { background: #eee; color: #808080; padding: 10px; margin: 0 0 10px 0; border-top: 1px solid #ccc }
+.commentsbox { background: #f5f5f5; color: #808080; padding: 10px; margin: 0 0 10px 0; border: 1px solid #ddd }
+
+.tag-0 {
+	font-size: 20pt;
+}
+
+.tag-1 {
+	font-size: 16pt;
+}
+
+.tag-2 {
+	font-size: 12pt;
+}
+
+.tag-4 {
+	font-size: 8pt;
+}
+
+/*** Main area *****/
+#main { margin: 0 auto; width: 900px; padding-top: 0px; background: transparent } 
+a { color: #0066B3; background: inherit; text-decoration: none; }
+h1 { font: bold 1.9em Arial, Arial, Sans-Serif  }
+h2 { font: bold 1.2em Arial, Arial, Sans-Serif; padding: 0; margin: 0 }
+ul {  padding: 0; margin: 0 }
+li { list-style-type: none }
+
+.capital { float:left; color:silver; font-size:100px; line-height:70px; padding:2px; font-family: "Times New Roman", times, Sans-Sherif; background: #FFF }
+
+#left { float: left; 	width: 640px; padding: 0; color: #555; background: #FFF }
+#left p { color: #555; text-align: justify; margin: 7px 0 7px 0; background: inherit }
+#left img { margin: 0px 10px 3px 0px; position: relative; float: left; border: 1px solid  #f5f5f5; padding: 1px; background: #FFF }
+#left h2 { color: #999; width: 100%; border-bottom: 1px solid #BBB; margin-bottom: 8px; line-height: 20px; background: inherit }
+#left ul { }
+ul#left ul { list-style-position: inside; margin-left: 2px }
+#left ul li { list-style-type: square; margin-left: 15px }
+#left ul ul li { list-style: none; margin-left: 10px; list-style-type: lower-alpha; list-style-position: inside }
+#left .citation { background: #FFF url(images/cit1.gif) no-repeat top left; font-style: italic; padding: 10px 0px 0 35px; font-size: 1.0em }
+#left .citation p {  background: #FFF url(images/cit2.gif) no-repeat bottom right; padding-bottom: 20px; padding-right: 35px; color: #555; }
+.torightc { float: right; margin: 0 10px; border: 1px solid #ddd; padding: 5px; background: #f5f5f5  }
+#left blockquote { text-align: justify; border-left: 8px solid #f0f0f0; padding-left: 8px; margin-left: 15px; margin-top: 5px; background: inherit }
+#left .date { margin-bottom: 25px; margin-top: 10px; padding-top: 5px; text-align: right; border-top: 1px solid #f5f5f5; background: inherit }
+#left .date a { text-decoration: none; background: inherit; }
+#left .comment {	background: #F5F5F5 }
+#left .comment .date {
+	text-align: left;
+	background: #CCC;
+	margin: -10px -10px 8px -10px;
+	padding: 5px;
+	color: #FFF;
+	font-weight: bold;
+	border: none
+}	
+#left .comment .date a { color: #FFF; text-decoration: underline; background: inherit }
+#left br { margin: 0px 0 5px 0; background: inherit }
+
+#post-list { margin-left:0; }
+#post-list > li {list-style:none; margin-bottom: 10px;  padding-bottom: 10px;}
+
+
+#paginator { float: left; width: 640px; padding: 0; color: #555; background: #FFF; margin-bottom: 13px; border-top: 1px solid #BBB;  }
+#paginator p { color: #555; text-align: justify; margin: 7px 0 7px 0; background: inherit }
+
+#right {	float: right; width: 210px; margin: 0; background: #FFF }
+#right h2 { 
+	color: #FFF; 
+	border-bottom: 1px solid #f0f0f0; 
+	font-size: 0.9em;
+	padding-left: 8px;
+	line-height: 20px;  
+	background: #a1a1a1 url(../images/rh2.jpg) no-repeat top center;
+	margin-bottom: 5px
+}
+
+#right .box { border: none; padding: 0px 0 10px 0; margin: 0 0 1em 0; background: #f5f5f5 url(../images/rbot.jpg) no-repeat bottom center }
+#right .box ul { padding-left: 8px }
+#right .box li a { text-decoration: none; font-size: 0.9em }
+
+.extra {
+	text-align: right;
+	padding:8px;
+	font-size:1.8em;
+	font-family: "Times New Roman", times;
+	margin:0px;
+	color: #AAA;
+	line-height: 25px;
+	background: #FFF;
+}
+.extra h3 { color: #CCD8E1;  margin-bottom: 5px; font-size: 1.2em; background: #FFF }
+.extra a { color: #8FB9DB; text-decoration: none; font-style: italic; background: #FFF }
+.extra p { margin-top: 15px; background: #FFF }
+
+/* Buttons */
+.btn, .skiplink {
+  display: inline-block;
+  width: auto;
+  background: #f2f2f2;
+  -webkit-appearance: none;
+  font-family: "Open Sans";
+  font-weight: 600;
+  padding: 0 !important;
+  text-align: center;
+}
+.btn > a, .btn input, .btn button, .skiplink > a, .skiplink input, .skiplink button {
+  display: block;
+  padding: 0 18px;
+  color: white;
+  height: 100%;
+}
+.btn input, .btn button, .skiplink input, .skiplink button {
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.btn.xlarge, .skiplink.xlarge {
+  font-size: 30px;
+  font-size: 1.875rem;
+  height: 66px;
+  line-height: 64px;
+}
+.btn.xlarge a, .skiplink.xlarge a {
+  position: relative;
+  padding: 0 30px;
+}
+.btn.xlarge.icon-left a, .skiplink.xlarge.icon-left a {
+  padding-left: 66px;
+}
+.btn.xlarge.icon-left a:before, .skiplink.xlarge.icon-left a:before {
+  left: 20px;
+}
+.btn.xlarge.icon-right a, .skiplink.xlarge.icon-right a {
+  padding-right: 66px;
+}
+.btn.xlarge.icon-right a:after, .skiplink.xlarge.icon-right a:after {
+  right: 20px;
+}
+.btn.large, .skiplink.large {
+  font-size: 26px;
+  font-size: 1.625rem;
+  height: 58px;
+  line-height: 56px;
+}
+.btn.large a, .skiplink.large a {
+  position: relative;
+  padding: 0 26px;
+}
+.btn.large.icon-left a, .skiplink.large.icon-left a {
+  padding-left: 58px;
+}
+.btn.large.icon-left a:before, .skiplink.large.icon-left a:before {
+  left: 17.33333px;
+}
+.btn.large.icon-right a, .skiplink.large.icon-right a {
+  padding-right: 58px;
+}
+.btn.large.icon-right a:after, .skiplink.large.icon-right a:after {
+  right: 17.33333px;
+}
+.btn.medium, .skiplink.medium {
+  font-size: 16px;
+  font-size: 0.8rem;
+  height: 16px;
+  line-height: 16px;
+  text-align: left;
+  width: 92px;
+}
+.btn.medium a, .skiplink.medium a {
+  position: relative;
+  padding: 0 16px;
+}
+.btn.medium.icon-left a, .skiplink.medium.icon-left a {
+  padding-left: 36px;
+}
+.btn.medium.icon-left a:before, .skiplink.medium.icon-left a:before {
+  left: 10.66667px;
+}
+.btn.medium.icon-right a, .skiplink.medium.icon-right a {
+  padding-right: 36px;
+}
+.btn.medium.icon-right a:after, .skiplink.medium.icon-right a:after {
+  right: 10.66667px;
+}
+.btn.medium a, .skiplink.medium a {
+  padding: 0 10px;
+}
+.btn.small, .skiplink.small {
+  font-size: 10px;
+  font-size: 0.625rem;
+  height: 23px;
+  line-height: 21px;
+}
+.btn.small a, .skiplink.small a {
+  position: relative;
+  padding: 0 10px;
+}
+.btn.small.icon-left a, .skiplink.small.icon-left a {
+  padding-left: 23px;
+}
+.btn.small.icon-left a:before, .skiplink.small.icon-left a:before {
+  left: 6.66667px;
+}
+.btn.small.icon-right a, .skiplink.small.icon-right a {
+  padding-right: 23px;
+}
+.btn.small.icon-right a:after, .skiplink.small.icon-right a:after {
+  right: 6.66667px;
+}
+.btn.small a, .skiplink.small a {
+  padding: 0 10px;
+}
+.btn.oval, .skiplink.oval {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+.btn.pill-left, .skiplink.pill-left {
+  -webkit-border-radius: 500px 0 0 500px;
+  -moz-border-radius: 500px 0 0 500px;
+  -ms-border-radius: 500px 0 0 500px;
+  -o-border-radius: 500px 0 0 500px;
+  border-radius: 500px 0 0 500px;
+}
+.btn.pill-right, .skiplink.pill-right {
+  -webkit-border-radius: 0 500px 500px 0;
+  -moz-border-radius: 0 500px 500px 0;
+  -ms-border-radius: 0 500px 500px 0;
+  -o-border-radius: 0 500px 500px 0;
+  border-radius: 0 500px 500px 0;
+}
+.btn.primary, .skiplink.primary {
+  background: #3085d6;
+  border: 1px solid #3085d6;
+}
+.btn.primary:hover, .skiplink.primary:hover {
+  background: #5b9ede;
+}
+.btn.primary:active, .skiplink.primary:active {
+  background: #236bb0;
+}
+.btn.secondary, .skiplink.secondary {
+  background: #42a35a;
+  border: 1px solid #42a35a;
+}
+.btn.secondary:hover, .skiplink.secondary:hover {
+  background: #5bbd73;
+}
+.btn.secondary:active, .skiplink.secondary:active {
+  background: #337f46;
+}
+.btn.default, .skiplink.default {
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.btn.default:hover, .skiplink.default:hover {
+  background: white;
+}
+.btn.default:active, .skiplink.default:active {
+  background: #d8d8d8;
+}
+.btn.default:hover, .skiplink.default:hover {
+  border: 1px solid #e5e5e5;
+}
+.btn.default a, .btn.default input, .btn.default button, .skiplink.default a, .skiplink.default input, .skiplink.default button {
+  color: #555555;
+}
+.btn.info, .skiplink.info {
+  background: #4a4d50;
+  border: 1px solid #4a4d50;
+}
+.btn.info:hover, .skiplink.info:hover {
+  background: #63676a;
+}
+.btn.info:active, .skiplink.info:active {
+  background: #313436;
+}
+.btn.danger, .skiplink.danger {
+  background: #ca3838;
+  border: 1px solid #ca3838;
+}
+.btn.danger:hover, .skiplink.danger:hover {
+  background: #d56060;
+}
+.btn.danger:active, .skiplink.danger:active {
+  background: #a32c2c;
+}
+.btn.warning, .skiplink.warning {
+  background: #f6b83f;
+  border: 1px solid #f6b83f;
+  color: #644405;
+}
+.btn.warning:hover, .skiplink.warning:hover {
+  background: #f8ca70;
+}
+.btn.warning:active, .skiplink.warning:active {
+  background: #f4a60e;
+}
+.btn.warning a, .btn.warning input, .btn.warning button, .skiplink.warning a, .skiplink.warning input, .skiplink.warning button {
+  color: #644405;
+}
+.btn.success, .skiplink.success {
+  background: #58c026;
+  border: 1px solid #58c026;
+}
+.btn.success:hover, .skiplink.success:hover {
+  background: #72d940;
+}
+.btn.success:active, .skiplink.success:active {
+  background: #44951e;
+}
+.btn.twitter, .skiplink.twitter {
+  background: #00aced;
+  border: 1px solid #00aced;
+}
+.btn.twitter:hover, .skiplink.twitter:hover {
+  background: #21c2ff;
+}
+.btn.twitter:active, .skiplink.twitter:active {
+  background: #0087ba;
+}
+.btn.facebook, .skiplink.facebook {
+  background: #3b5998;
+  border: 1px solid #3b5998;
+}
+.btn.facebook:hover, .skiplink.facebook:hover {
+  background: #4c70ba;
+}
+.btn.facebook:active, .skiplink.facebook:active {
+  background: #2d4373;
+}
+.btn.metro, .metro .btn, .metro .skiplink, .btn.metro:hover, .metro .btn:hover, .metro .skiplink:hover, .skiplink.metro:hover, .btn.metro:active, .metro .btn:active, .metro .skiplink:active, .skiplink.metro:active, .skiplink.metro {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn.metro.rounded, .metro .rounded.btn, .metro .rounded.skiplink, .metro .rounded.btn:hover, .metro .rounded.skiplink:hover, .rounded.skiplink.metro:hover, .metro .rounded.btn:active, .metro .rounded.skiplink:active, .rounded.skiplink.metro:active, .skiplink.metro.rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn.pretty, .pretty .btn, .pretty .skiplink, .btn.pretty:hover, .pretty .btn:hover, .pretty .skiplink:hover, .skiplink.pretty:hover, .btn.pretty:active, .pretty .btn:active, .pretty .skiplink:active, .skiplink.pretty:active, .skiplink.pretty {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn.pretty.squared, .pretty .squared.btn, .pretty .squared.skiplink, .pretty .squared.btn:hover, .pretty .squared.skiplink:hover, .squared.skiplink.pretty:hover, .pretty .squared.btn:active, .pretty .squared.skiplink:active, .squared.skiplink.pretty:active, .skiplink.pretty.squared {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn.pretty.primary, .pretty .primary.btn, .pretty .primary.skiplink, .pretty .primary.btn:hover, .pretty .primary.skiplink:hover, .primary.skiplink.pretty:hover, .pretty .primary.btn:active, .pretty .primary.skiplink:active, .primary.skiplink.pretty:active, .skiplink.pretty.primary {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #85b7e7), color-stop(100%, #2a85dc));
+  background-image: -webkit-linear-gradient(#85b7e7, #2a85dc);
+  background-image: -moz-linear-gradient(#85b7e7, #2a85dc);
+  background-image: -o-linear-gradient(#85b7e7, #2a85dc);
+  background-image: linear-gradient(#85b7e7, #2a85dc);
+  box-shadow: inset 0 0 3px #f0f6fc;
+  border: 1px solid #1f5e9b;
+}
+.pretty .primary.btn:hover, .pretty .primary.skiplink:hover, .primary.btn.pretty:hover, .primary.skiplink.pretty:hover, .pretty .primary.btn:hover:active, .pretty .primary.skiplink:hover:active, .skiplink.pretty.primary:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a2d4fc), color-stop(100%, #54b2fe));
+  background-image: -webkit-linear-gradient(#a2d4fc, #54b2fe);
+  background-image: -moz-linear-gradient(#a2d4fc, #54b2fe);
+  background-image: -o-linear-gradient(#a2d4fc, #54b2fe);
+  background-image: linear-gradient(#a2d4fc, #54b2fe);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #0e90f8;
+}
+.pretty .primary.btn:active, .pretty .primary.skiplink:active, .pretty .primary.btn:active:hover, .pretty .primary.skiplink:active:hover, .primary.btn.pretty:active, .primary.skiplink.pretty:active, .skiplink.pretty.primary:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a85dc), color-stop(100%, #85b7e7));
+  background-image: -webkit-linear-gradient(#2a85dc, #85b7e7);
+  background-image: -moz-linear-gradient(#2a85dc, #85b7e7);
+  background-image: -o-linear-gradient(#2a85dc, #85b7e7);
+  background-image: linear-gradient(#2a85dc, #85b7e7);
+  box-shadow: inset 0 0 3px white;
+}
+.btn.pretty.primary a, .pretty .primary.btn a, .pretty .primary.skiplink a, .pretty .primary.btn:hover a, .pretty .primary.skiplink:hover a, .primary.skiplink.pretty:hover a, .pretty .primary.btn:active a, .pretty .primary.skiplink:active a, .primary.skiplink.pretty:active a, .btn.pretty.primary input, .pretty .primary.btn input, .pretty .primary.skiplink input, .pretty .primary.btn:hover input, .pretty .primary.skiplink:hover input, .primary.skiplink.pretty:hover input, .pretty .primary.btn:active input, .pretty .primary.skiplink:active input, .primary.skiplink.pretty:active input, .btn.pretty.primary button, .pretty .primary.btn button, .pretty .primary.skiplink button, .pretty .primary.btn:hover button, .pretty .primary.skiplink:hover button, .primary.skiplink.pretty:hover button, .pretty .primary.btn:active button, .pretty .primary.skiplink:active button, .primary.skiplink.pretty:active button, .skiplink.pretty.primary a, .skiplink.pretty.primary input, .skiplink.pretty.primary button {
+  text-shadow: 0 1px 1px #1a5186;
+}
+.btn.pretty.secondary, .pretty .secondary.btn, .pretty .secondary.skiplink, .pretty .secondary.btn:hover, .pretty .secondary.skiplink:hover, .secondary.skiplink.pretty:hover, .pretty .secondary.btn:active, .pretty .secondary.skiplink:active, .secondary.skiplink.pretty:active, .skiplink.pretty.secondary {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #80cb92), color-stop(100%, #3ca957));
+  background-image: -webkit-linear-gradient(#80cb92, #3ca957);
+  background-image: -moz-linear-gradient(#80cb92, #3ca957);
+  background-image: -o-linear-gradient(#80cb92, #3ca957);
+  background-image: linear-gradient(#80cb92, #3ca957);
+  box-shadow: inset 0 0 3px #daf0e0;
+  border: 1px solid #2c6d3c;
+}
+.pretty .secondary.btn:hover, .pretty .secondary.skiplink:hover, .secondary.btn.pretty:hover, .secondary.skiplink.pretty:hover, .pretty .secondary.btn:hover:active, .pretty .secondary.skiplink:hover:active, .skiplink.pretty.secondary:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1d3ad), color-stop(100%, #68c07d));
+  background-image: -webkit-linear-gradient(#a1d3ad, #68c07d);
+  background-image: -moz-linear-gradient(#a1d3ad, #68c07d);
+  background-image: -o-linear-gradient(#a1d3ad, #68c07d);
+  background-image: linear-gradient(#a1d3ad, #68c07d);
+  box-shadow: inset 0 0 3px #f8fcf9;
+  border: 1px solid #469659;
+}
+.pretty .secondary.btn:active, .pretty .secondary.skiplink:active, .pretty .secondary.btn:active:hover, .pretty .secondary.skiplink:active:hover, .secondary.btn.pretty:active, .secondary.skiplink.pretty:active, .skiplink.pretty.secondary:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3ca957), color-stop(100%, #80cb92));
+  background-image: -webkit-linear-gradient(#3ca957, #80cb92);
+  background-image: -moz-linear-gradient(#3ca957, #80cb92);
+  background-image: -o-linear-gradient(#3ca957, #80cb92);
+  background-image: linear-gradient(#3ca957, #80cb92);
+  box-shadow: inset 0 0 3px #ecf8ef;
+}
+.btn.pretty.secondary a, .pretty .secondary.btn a, .pretty .secondary.skiplink a, .pretty .secondary.btn:hover a, .pretty .secondary.skiplink:hover a, .secondary.skiplink.pretty:hover a, .pretty .secondary.btn:active a, .pretty .secondary.skiplink:active a, .secondary.skiplink.pretty:active a, .btn.pretty.secondary input, .pretty .secondary.btn input, .pretty .secondary.skiplink input, .pretty .secondary.btn:hover input, .pretty .secondary.skiplink:hover input, .secondary.skiplink.pretty:hover input, .pretty .secondary.btn:active input, .pretty .secondary.skiplink:active input, .secondary.skiplink.pretty:active input, .btn.pretty.secondary button, .pretty .secondary.btn button, .pretty .secondary.skiplink button, .pretty .secondary.btn:hover button, .pretty .secondary.skiplink:hover button, .secondary.skiplink.pretty:hover button, .pretty .secondary.btn:active button, .pretty .secondary.skiplink:active button, .secondary.skiplink.pretty:active button, .skiplink.pretty.secondary a, .skiplink.pretty.secondary input, .skiplink.pretty.secondary button {
+  text-shadow: 0 1px 1px #255a32;
+}
+.btn.pretty.default, .pretty .default.btn, .pretty .default.skiplink, .pretty .default.btn:hover, .pretty .default.skiplink:hover, .default.skiplink.pretty:hover, .pretty .default.btn:active, .pretty .default.skiplink:active, .default.skiplink.pretty:active, .skiplink.pretty.default {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f3f1f1));
+  background-image: -webkit-linear-gradient(#ffffff, #f3f1f1);
+  background-image: -moz-linear-gradient(#ffffff, #f3f1f1);
+  background-image: -o-linear-gradient(#ffffff, #f3f1f1);
+  background-image: linear-gradient(#ffffff, #f3f1f1);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #cccccc;
+}
+.pretty .default.btn:hover, .pretty .default.skiplink:hover, .default.btn.pretty:hover, .default.skiplink.pretty:hover, .pretty .default.btn:hover:active, .pretty .default.skiplink:hover:active, .skiplink.pretty.default:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #ffffff);
+  background-image: linear-gradient(#ffffff, #ffffff);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #d9d9d9;
+}
+.pretty .default.btn:active, .pretty .default.skiplink:active, .pretty .default.btn:active:hover, .pretty .default.skiplink:active:hover, .default.btn.pretty:active, .default.skiplink.pretty:active, .skiplink.pretty.default:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f1f1), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f3f1f1, #ffffff);
+  background-image: -moz-linear-gradient(#f3f1f1, #ffffff);
+  background-image: -o-linear-gradient(#f3f1f1, #ffffff);
+  background-image: linear-gradient(#f3f1f1, #ffffff);
+  box-shadow: inset 0 0 3px white;
+}
+.btn.pretty.default a, .pretty .default.btn a, .pretty .default.skiplink a, .pretty .default.btn:hover a, .pretty .default.skiplink:hover a, .default.skiplink.pretty:hover a, .pretty .default.btn:active a, .pretty .default.skiplink:active a, .default.skiplink.pretty:active a, .btn.pretty.default input, .pretty .default.btn input, .pretty .default.skiplink input, .pretty .default.btn:hover input, .pretty .default.skiplink:hover input, .default.skiplink.pretty:hover input, .pretty .default.btn:active input, .pretty .default.skiplink:active input, .default.skiplink.pretty:active input, .btn.pretty.default button, .pretty .default.btn button, .pretty .default.skiplink button, .pretty .default.btn:hover button, .pretty .default.skiplink:hover button, .default.skiplink.pretty:hover button, .pretty .default.btn:active button, .pretty .default.skiplink:active button, .default.skiplink.pretty:active button, .skiplink.pretty.default a, .skiplink.pretty.default input, .skiplink.pretty.default button {
+  text-shadow: 0 1px 1px white;
+}
+.btn.pretty.info, .pretty .info.btn, .pretty .info.skiplink, .pretty .info.btn:hover, .pretty .info.skiplink:hover, .info.skiplink.pretty:hover, .pretty .info.btn:active, .pretty .info.skiplink:active, .info.skiplink.pretty:active, .skiplink.pretty.info {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7b8085), color-stop(100%, #464d54));
+  background-image: -webkit-linear-gradient(#7b8085, #464d54);
+  background-image: -moz-linear-gradient(#7b8085, #464d54);
+  background-image: -o-linear-gradient(#7b8085, #464d54);
+  background-image: linear-gradient(#7b8085, #464d54);
+  box-shadow: inset 0 0 3px #bdc0c2;
+  border: 1px solid #252728;
+}
+.pretty .info.btn:hover, .pretty .info.skiplink:hover, .info.btn.pretty:hover, .info.skiplink.pretty:hover, .pretty .info.btn:hover:active, .pretty .info.skiplink:hover:active, .skiplink.pretty.info:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeb3b6), color-stop(100%, #808e98));
+  background-image: -webkit-linear-gradient(#aeb3b6, #808e98);
+  background-image: -moz-linear-gradient(#aeb3b6, #808e98);
+  background-image: -o-linear-gradient(#aeb3b6, #808e98);
+  background-image: linear-gradient(#aeb3b6, #808e98);
+  box-shadow: inset 0 0 3px #f1f2f3;
+  border: 1px solid #60676b;
+}
+.pretty .info.btn:active, .pretty .info.skiplink:active, .pretty .info.btn:active:hover, .pretty .info.skiplink:active:hover, .info.btn.pretty:active, .info.skiplink.pretty:active, .skiplink.pretty.info:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #464d54), color-stop(100%, #7b8085));
+  background-image: -webkit-linear-gradient(#464d54, #7b8085);
+  background-image: -moz-linear-gradient(#464d54, #7b8085);
+  background-image: -o-linear-gradient(#464d54, #7b8085);
+  background-image: linear-gradient(#464d54, #7b8085);
+  box-shadow: inset 0 0 3px #cbcdce;
+}
+.btn.pretty.info a, .pretty .info.btn a, .pretty .info.skiplink a, .pretty .info.btn:hover a, .pretty .info.skiplink:hover a, .info.skiplink.pretty:hover a, .pretty .info.btn:active a, .pretty .info.skiplink:active a, .info.skiplink.pretty:active a, .btn.pretty.info input, .pretty .info.btn input, .pretty .info.skiplink input, .pretty .info.btn:hover input, .pretty .info.skiplink:hover input, .info.skiplink.pretty:hover input, .pretty .info.btn:active input, .pretty .info.skiplink:active input, .info.skiplink.pretty:active input, .btn.pretty.info button, .pretty .info.btn button, .pretty .info.skiplink button, .pretty .info.btn:hover button, .pretty .info.skiplink:hover button, .info.skiplink.pretty:hover button, .pretty .info.btn:active button, .pretty .info.skiplink:active button, .info.skiplink.pretty:active button, .skiplink.pretty.info a, .skiplink.pretty.info input, .skiplink.pretty.info button {
+  text-shadow: 0 1px 1px #191a1b;
+}
+.btn.pretty.danger, .pretty .danger.btn, .pretty .danger.skiplink, .pretty .danger.btn:hover, .pretty .danger.skiplink:hover, .danger.skiplink.pretty:hover, .pretty .danger.btn:active, .pretty .danger.skiplink:active, .danger.skiplink.pretty:active, .skiplink.pretty.danger {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #df8989), color-stop(100%, #d03232));
+  background-image: -webkit-linear-gradient(#df8989, #d03232);
+  background-image: -moz-linear-gradient(#df8989, #d03232);
+  background-image: -o-linear-gradient(#df8989, #d03232);
+  background-image: linear-gradient(#df8989, #d03232);
+  box-shadow: inset 0 0 3px #faeded;
+  border: 1px solid #8f2626;
+}
+.pretty .danger.btn:hover, .pretty .danger.skiplink:hover, .danger.btn.pretty:hover, .danger.skiplink.pretty:hover, .pretty .danger.btn:hover:active, .pretty .danger.skiplink:hover:active, .skiplink.pretty.danger:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f79696), color-stop(100%, #f64a4a));
+  background-image: -webkit-linear-gradient(#f79696, #f64a4a);
+  background-image: -moz-linear-gradient(#f79696, #f64a4a);
+  background-image: -o-linear-gradient(#f79696, #f64a4a);
+  background-image: linear-gradient(#f79696, #f64a4a);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #e21212;
+}
+.pretty .danger.btn:active, .pretty .danger.skiplink:active, .pretty .danger.btn:active:hover, .pretty .danger.skiplink:active:hover, .danger.btn.pretty:active, .danger.skiplink.pretty:active, .skiplink.pretty.danger:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d03232), color-stop(100%, #df8989));
+  background-image: -webkit-linear-gradient(#d03232, #df8989);
+  background-image: -moz-linear-gradient(#d03232, #df8989);
+  background-image: -o-linear-gradient(#d03232, #df8989);
+  background-image: linear-gradient(#d03232, #df8989);
+  box-shadow: inset 0 0 3px white;
+}
+.btn.pretty.danger a, .pretty .danger.btn a, .pretty .danger.skiplink a, .pretty .danger.btn:hover a, .pretty .danger.skiplink:hover a, .danger.skiplink.pretty:hover a, .pretty .danger.btn:active a, .pretty .danger.skiplink:active a, .danger.skiplink.pretty:active a, .btn.pretty.danger input, .pretty .danger.btn input, .pretty .danger.skiplink input, .pretty .danger.btn:hover input, .pretty .danger.skiplink:hover input, .danger.skiplink.pretty:hover input, .pretty .danger.btn:active input, .pretty .danger.skiplink:active input, .danger.skiplink.pretty:active input, .btn.pretty.danger button, .pretty .danger.btn button, .pretty .danger.skiplink button, .pretty .danger.btn:hover button, .pretty .danger.skiplink:hover button, .danger.skiplink.pretty:hover button, .pretty .danger.btn:active button, .pretty .danger.skiplink:active button, .danger.skiplink.pretty:active button, .skiplink.pretty.danger a, .skiplink.pretty.danger input, .skiplink.pretty.danger button {
+  text-shadow: 0 1px 1px #7b2121;
+}
+.btn.pretty.warning, .pretty .warning.btn, .pretty .warning.skiplink, .pretty .warning.btn:hover, .pretty .warning.skiplink:hover, .warning.skiplink.pretty:hover, .pretty .warning.btn:active, .pretty .warning.skiplink:active, .warning.skiplink.pretty:active, .skiplink.pretty.warning {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbdca0), color-stop(100%, #fbba3a));
+  background-image: -webkit-linear-gradient(#fbdca0, #fbba3a);
+  background-image: -moz-linear-gradient(#fbdca0, #fbba3a);
+  background-image: -o-linear-gradient(#fbdca0, #fbba3a);
+  background-image: linear-gradient(#fbdca0, #fbba3a);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #de960a;
+  color: #644405;
+}
+.pretty .warning.btn:hover, .pretty .warning.skiplink:hover, .warning.btn.pretty:hover, .warning.skiplink.pretty:hover, .pretty .warning.btn:hover:active, .pretty .warning.skiplink:hover:active, .skiplink.pretty.warning:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #feecca), color-stop(100%, #ffd37d));
+  background-image: -webkit-linear-gradient(#feecca, #ffd37d);
+  background-image: -moz-linear-gradient(#feecca, #ffd37d);
+  background-image: -o-linear-gradient(#feecca, #ffd37d);
+  background-image: linear-gradient(#feecca, #ffd37d);
+  box-shadow: inset 0 0 3px white;
+  border: 1px solid #fcb834;
+}
+.pretty .warning.btn:active, .pretty .warning.skiplink:active, .pretty .warning.btn:active:hover, .pretty .warning.skiplink:active:hover, .warning.btn.pretty:active, .warning.skiplink.pretty:active, .skiplink.pretty.warning:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbba3a), color-stop(100%, #fbdca0));
+  background-image: -webkit-linear-gradient(#fbba3a, #fbdca0);
+  background-image: -moz-linear-gradient(#fbba3a, #fbdca0);
+  background-image: -o-linear-gradient(#fbba3a, #fbdca0);
+  background-image: linear-gradient(#fbba3a, #fbdca0);
+  box-shadow: inset 0 0 3px white;
+}
+.btn.pretty.warning a, .pretty .warning.btn a, .pretty .warning.skiplink a, .pretty .warning.btn:hover a, .pretty .warning.skiplink:hover a, .warning.skiplink.pretty:hover a, .pretty .warning.btn:active a, .pretty .warning.skiplink:active a, .warning.skiplink.pretty:active a, .btn.pretty.warning input, .pretty .warning.btn input, .pretty .warning.skiplink input, .pretty .warning.btn:hover input, .pretty .warning.skiplink:hover input, .warning.skiplink.pretty:hover input, .pretty .warning.btn:active input, .pretty .warning.skiplink:active input, .warning.skiplink.pretty:active input, .btn.pretty.warning button, .pretty .warning.btn button, .pretty .warning.skiplink button, .pretty .warning.btn:hover button, .pretty .warning.skiplink:hover button, .warning.skiplink.pretty:hover button, .pretty .warning.btn:active button, .pretty .warning.skiplink:active button, .warning.skiplink.pretty:active button, .skiplink.pretty.warning a, .skiplink.pretty.warning input, .skiplink.pretty.warning button {
+  text-shadow: 0 1px 1px #fbdca0;
+}
+.btn.pretty.success, .pretty .success.btn, .pretty .success.skiplink, .pretty .success.btn:hover, .pretty .success.skiplink:hover, .success.skiplink.pretty:hover, .pretty .success.btn:active, .pretty .success.skiplink:active, .success.skiplink.pretty:active, .skiplink.pretty.success {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91e26a), color-stop(100%, #56c620));
+  background-image: -webkit-linear-gradient(#91e26a, #56c620);
+  background-image: -moz-linear-gradient(#91e26a, #56c620);
+  background-image: -o-linear-gradient(#91e26a, #56c620);
+  background-image: linear-gradient(#91e26a, #56c620);
+  box-shadow: inset 0 0 3px #e0f7d5;
+  border: 1px solid #3b8019;
+}
+.pretty .success.btn:hover, .pretty .success.skiplink:hover, .success.btn.pretty:hover, .success.skiplink.pretty:hover, .pretty .success.btn:hover:active, .pretty .success.skiplink:hover:active, .skiplink.pretty.success:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96e570), color-stop(100%, #64df29));
+  background-image: -webkit-linear-gradient(#96e570, #64df29);
+  background-image: -moz-linear-gradient(#96e570, #64df29);
+  background-image: -o-linear-gradient(#96e570, #64df29);
+  background-image: linear-gradient(#96e570, #64df29);
+  box-shadow: inset 0 0 3px #e5f9db;
+  border: 1px solid #479f1d;
+}
+.pretty .success.btn:active, .pretty .success.skiplink:active, .pretty .success.btn:active:hover, .pretty .success.skiplink:active:hover, .success.btn.pretty:active, .success.skiplink.pretty:active, .skiplink.pretty.success:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #56c620), color-stop(100%, #91e26a));
+  background-image: -webkit-linear-gradient(#56c620, #91e26a);
+  background-image: -moz-linear-gradient(#56c620, #91e26a);
+  background-image: -o-linear-gradient(#56c620, #91e26a);
+  background-image: linear-gradient(#56c620, #91e26a);
+  box-shadow: inset 0 0 3px #f0fbea;
+}
+.btn.pretty.success a, .pretty .success.btn a, .pretty .success.skiplink a, .pretty .success.btn:hover a, .pretty .success.skiplink:hover a, .success.skiplink.pretty:hover a, .pretty .success.btn:active a, .pretty .success.skiplink:active a, .success.skiplink.pretty:active a, .btn.pretty.success input, .pretty .success.btn input, .pretty .success.skiplink input, .pretty .success.btn:hover input, .pretty .success.skiplink:hover input, .success.skiplink.pretty:hover input, .pretty .success.btn:active input, .pretty .success.skiplink:active input, .success.skiplink.pretty:active input, .btn.pretty.success button, .pretty .success.btn button, .pretty .success.skiplink button, .pretty .success.btn:hover button, .pretty .success.skiplink:hover button, .success.skiplink.pretty:hover button, .pretty .success.btn:active button, .pretty .success.skiplink:active button, .success.skiplink.pretty:active button, .skiplink.pretty.success a, .skiplink.pretty.success input, .skiplink.pretty.success button {
+  text-shadow: 0 1px 1px #316b15;
+}
+.btn.pretty.twitter, .pretty .twitter.btn, .pretty .twitter.skiplink, .pretty .twitter.btn:hover, .pretty .twitter.skiplink:hover, .twitter.skiplink.pretty:hover, .pretty .twitter.btn:active, .pretty .twitter.skiplink:active, .twitter.skiplink.pretty:active, .skiplink.pretty.twitter {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #54d0ff), color-stop(100%, #00aced));
+  background-image: -webkit-linear-gradient(#54d0ff, #00aced);
+  background-image: -moz-linear-gradient(#54d0ff, #00aced);
+  background-image: -o-linear-gradient(#54d0ff, #00aced);
+  background-image: linear-gradient(#54d0ff, #00aced);
+  box-shadow: inset 0 0 3px #d4f3ff;
+  border: 1px solid #0074a1;
+}
+.pretty .twitter.btn:hover, .pretty .twitter.skiplink:hover, .twitter.btn.pretty:hover, .twitter.skiplink.pretty:hover, .pretty .twitter.btn:hover:active, .pretty .twitter.skiplink:hover:active, .skiplink.pretty.twitter:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #70d6fc), color-stop(100%, #21c2ff));
+  background-image: -webkit-linear-gradient(#70d6fc, #21c2ff);
+  background-image: -moz-linear-gradient(#70d6fc, #21c2ff);
+  background-image: -o-linear-gradient(#70d6fc, #21c2ff);
+  background-image: linear-gradient(#70d6fc, #21c2ff);
+  box-shadow: inset 0 0 3px #edfaff;
+  border: 1px solid #0497d0;
+}
+.pretty .twitter.btn:active, .pretty .twitter.skiplink:active, .pretty .twitter.btn:active:hover, .pretty .twitter.skiplink:active:hover, .twitter.btn.pretty:active, .twitter.skiplink.pretty:active, .skiplink.pretty.twitter:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00aced), color-stop(100%, #54d0ff));
+  background-image: -webkit-linear-gradient(#00aced, #54d0ff);
+  background-image: -moz-linear-gradient(#00aced, #54d0ff);
+  background-image: -o-linear-gradient(#00aced, #54d0ff);
+  background-image: linear-gradient(#00aced, #54d0ff);
+  box-shadow: inset 0 0 3px #edfaff;
+}
+.btn.pretty.twitter a, .pretty .twitter.btn a, .pretty .twitter.skiplink a, .pretty .twitter.btn:hover a, .pretty .twitter.skiplink:hover a, .twitter.skiplink.pretty:hover a, .pretty .twitter.btn:active a, .pretty .twitter.skiplink:active a, .twitter.skiplink.pretty:active a, .btn.pretty.twitter input, .pretty .twitter.btn input, .pretty .twitter.skiplink input, .pretty .twitter.btn:hover input, .pretty .twitter.skiplink:hover input, .twitter.skiplink.pretty:hover input, .pretty .twitter.btn:active input, .pretty .twitter.skiplink:active input, .twitter.skiplink.pretty:active input, .btn.pretty.twitter button, .pretty .twitter.btn button, .pretty .twitter.skiplink button, .pretty .twitter.btn:hover button, .pretty .twitter.skiplink:hover button, .twitter.skiplink.pretty:hover button, .pretty .twitter.btn:active button, .pretty .twitter.skiplink:active button, .twitter.skiplink.pretty:active button, .skiplink.pretty.twitter a, .skiplink.pretty.twitter input, .skiplink.pretty.twitter button {
+  text-shadow: 0 1px 1px #006287;
+}
+.btn.pretty.facebook, .pretty .facebook.btn, .pretty .facebook.skiplink, .pretty .facebook.btn:hover, .pretty .facebook.skiplink:hover, .facebook.skiplink.pretty:hover, .pretty .facebook.btn:active, .pretty .facebook.skiplink:active, .facebook.skiplink.pretty:active, .skiplink.pretty.facebook {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #718dc8), color-stop(100%, #36579d));
+  background-image: -webkit-linear-gradient(#718dc8, #36579d);
+  background-image: -moz-linear-gradient(#718dc8, #36579d);
+  background-image: -o-linear-gradient(#718dc8, #36579d);
+  background-image: linear-gradient(#718dc8, #36579d);
+  box-shadow: inset 0 0 3px #cdd7ec;
+  border: 1px solid #263961;
+}
+.pretty .facebook.btn:hover, .pretty .facebook.skiplink:hover, .facebook.btn.pretty:hover, .facebook.skiplink.pretty:hover, .pretty .facebook.btn:hover:active, .pretty .facebook.skiplink:hover:active, .skiplink.pretty.facebook:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92a9d8), color-stop(100%, #547aca));
+  background-image: -webkit-linear-gradient(#92a9d8, #547aca);
+  background-image: -moz-linear-gradient(#92a9d8, #547aca);
+  background-image: -o-linear-gradient(#92a9d8, #547aca);
+  background-image: linear-gradient(#92a9d8, #547aca);
+  box-shadow: inset 0 0 3px #f0f3fa;
+  border: 1px solid #37579a;
+}
+.pretty .facebook.btn:active, .pretty .facebook.skiplink:active, .pretty .facebook.btn:active:hover, .pretty .facebook.skiplink:active:hover, .facebook.btn.pretty:active, .facebook.skiplink.pretty:active, .skiplink.pretty.facebook:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #36579d), color-stop(100%, #718dc8));
+  background-image: -webkit-linear-gradient(#36579d, #718dc8);
+  background-image: -moz-linear-gradient(#36579d, #718dc8);
+  background-image: -o-linear-gradient(#36579d, #718dc8);
+  background-image: linear-gradient(#36579d, #718dc8);
+  box-shadow: inset 0 0 3px #dfe6f3;
+}
+.btn.pretty.facebook a, .pretty .facebook.btn a, .pretty .facebook.skiplink a, .pretty .facebook.btn:hover a, .pretty .facebook.skiplink:hover a, .facebook.skiplink.pretty:hover a, .pretty .facebook.btn:active a, .pretty .facebook.skiplink:active a, .facebook.skiplink.pretty:active a, .btn.pretty.facebook input, .pretty .facebook.btn input, .pretty .facebook.skiplink input, .pretty .facebook.btn:hover input, .pretty .facebook.skiplink:hover input, .facebook.skiplink.pretty:hover input, .pretty .facebook.btn:active input, .pretty .facebook.skiplink:active input, .facebook.skiplink.pretty:active input, .btn.pretty.facebook button, .pretty .facebook.btn button, .pretty .facebook.skiplink button, .pretty .facebook.btn:hover button, .pretty .facebook.skiplink:hover button, .facebook.skiplink.pretty:hover button, .pretty .facebook.btn:active button, .pretty .facebook.skiplink:active button, .facebook.skiplink.pretty:active button, .skiplink.pretty.facebook a, .skiplink.pretty.facebook input, .skiplink.pretty.facebook button {
+  text-shadow: 0 1px 1px #1e2e4f;
+}
+/* Labels */
+
+.badge.primary, .label.primary {
+  background: #3085d6;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.secondary, .label.secondary {
+  background: #42a35a;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.default, .label.default {
+  background: #f2f2f2;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.default:hover, .label.default:hover {
+  border: 1px solid #e5e5e5;
+}
+.badge.default a, .label.default a {
+  color: #555555;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.info, .label.info {
+  background: #4a4d50;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.danger, .label.danger {
+  background: #ca3838;
+  color: white;
+  text-decoration: none;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.warning, .label.warning {
+  background: #f6b83f;
+  color: #644405;
+}
+.badge.warning a, .label.warning a {
+  color: #644405;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.success, .label.success {
+  background: #58c026;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.twitter, .label.twitter {
+  background: #00aced;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+.badge.facebook, .label.facebook {
+  background: #3b5998;
+}
+.badge.light, .label.light {
+  background: #fff;
+  color: #555555;
+  border: 1px solid #f2f2f2;
+}
+.badge.light a, .label.light a {
+  color: #d04526;
+}
+.badge.dark, .label.dark {
+  background: #212121;
+}
+
+.badge {
+  padding: 0 10px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.label {
+  padding: 0 10px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+

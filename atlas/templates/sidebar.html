@@ -1,0 +1,84 @@
+<div id="right">
+
+<div class="box">
+<h2>日志分类</h2>
+{% if categories %}
+<ol style="padding-left: 6px;">
+	{% for cat, null in categories %}
+		<li><a href="{{ SITEURL }}/{{ cat.url|e }}">{{ cat }}</a></li>
+	{% endfor %}
+</ol>
+{% endif %}
+</div>
+
+<div class="box">
+<h2>标签云</h2>
+{% if tags %}
+	<ul>
+	{% for tag in tag_cloud %}
+
+	   <span class="tag-{{ tag.1 }}">
+		<a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}  </a>
+	  </span>
+	{% endfor %}
+	</ul>
+{% endif %}
+</div>
+
+<div class="box">
+<h2>站内搜索</h2>
+<script>
+  (function() {
+    var cx = '013501204255703851045:tq0okpyawcw';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+
+<div class="box">
+<h2>热门文章</h2>
+{% include 'hot_disqus_posts.html' %}
+</div>
+
+<div class="box">
+<h2>最新日志</h2>
+<ol style="padding-left: 6px;">
+    {% set RECENT_POSTS = 10 %}
+    {% for article in articles|sort(reverse=True,attribute='date') %}
+        {%- if loop.index <= RECENT_POSTS %}
+                <li id="hotposts"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        {% endif %}
+    {%- endfor %}
+</ol>
+</div>
+
+<div class="box">
+<h2>最近评论</h2>
+{% include 'rencent_disqus.html' %}
+</div>
+
+<div class="box">
+<h2>左邻右舍</h2>
+   <dl>	
+	<dt>
+		<ul>
+			<li><a href="http://blog.csdn.net/wdzxl198">Atlas2013的专栏  </a></li>
+			<li><a href="http://www.yanyulin.info/">烟雨林  </a></li>
+		</ul>
+	</dt>
+   </dl>
+</div>
+
+<div class="box">
+<h2>文章归档</h2>
+
+</div>
+
+</div>

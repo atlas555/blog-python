@@ -1,0 +1,2 @@
+User-agnet: *
+Sitemap: http://zhangxiaolong.org/sitemap.xml

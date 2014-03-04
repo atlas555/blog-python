@@ -1,0 +1,26 @@
+{% if DS_SITENAME %}
+<!-- Duoshuo rencent Comment BEGIN -->
+<ul class="ds-recent-comments" data-num-items="20"  data-show-title="0" data-show-admin="1" data-excerpt-length="50" data-show-avatars="0"></ul>
+<!--多说js加载开始，一个页面只需要加载一次 -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"{{ DS_SITENAME }}"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '{{ SITEURL }}/theme/js/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!--多说js加载结束，一个页面只需要加载一次 -->
+<!-- Duoshuo rencent Comment END -->
+{% endif %}
+
+<!--//以下参数均为可选参数
+data-num-items="10"     //显示最新评论的条数，最大支持200条
+data-show-avatars="1"   //是否显示头像，1：显示，0：不显示
+data-show-time="1"      //是否显示时间，1：显示，0：不显示
+data-show-title="0"     //是否显示标题，1：显示，0：不显示
+data-show-admin="1"     //是否显示管理员的评论，1：显示，0：不显示
+data-excerpt-length="70"//最大显示评论汉字数
+-->
