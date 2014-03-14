@@ -11,7 +11,7 @@ AUTHOR_URL = 'author/{slug}.html'
 
 #网站设置
 SITENAME = u'晓的博客'
-SITEURL = u'http://zhangxiaolong.org'
+SITEURL = u''
 
 #标签设置
 TAG_CLOUD_STEPS = 4

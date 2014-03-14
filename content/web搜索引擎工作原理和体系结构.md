@@ -40,6 +40,7 @@ Author: Atlas 晓
 
 ###体系结构
 图示： 搜索引擎提携结构
-![搜索引擎提携结构](http://d.pcs.baidu.com/thumbnail/8c6bcebdf6b7e3fd8fd7f79f9e2e7c38?fid=3741478698-250528-747803702&time=1387854022&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-GEjrc%2Bw2A3U6SciWcgP2xSwABAM%3D&expires=1h&prisign=unkown&r=404878228&size=c850_u580&quality=100)
+
+<img src="http://ww4.sinaimg.cn/large/b7ba225djw1eedwocsfhsj20ib0eujs2.jpg" alt="zhangxiaolong.org" title="搜索引擎体系结构" height="400" width="450" />
 
 

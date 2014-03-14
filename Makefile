@@ -1,4 +1,4 @@
-PY=python
+PY=python3
 PELICAN=pelican
 PELICANOPTS=
 
@@ -103,6 +103,6 @@ cf_upload: publish
 
 github: publish
 	ghp-import $(OUTPUTDIR)
-	git push -f origin gh-pages:master
+	git push origin gh-pages
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

@@ -1,7 +1,7 @@
 {% if DS_SITENAME %}
 <!-- Duoshuo rencent Comment BEGIN -->
-<ul class="ds-recent-comments" data-num-items="20"  data-show-title="0" data-show-admin="0" data-excerpt-length="10" data-show-avatars="0" data-show-time="0" ></ul>
-
+<span><ul class="ds-recent-comments" data-num-items="20"  data-show-title="0" data-show-admin="0" data-excerpt-length="10" data-show-avatars="0" data-show-time="0" ></ul>
+</span>
 <!--多说js加载开始，一个页面只需要加载一次 -->
 <script type="text/javascript" >
 var duoshuoQuery = {short_name:"{{ DS_SITENAME }}"};

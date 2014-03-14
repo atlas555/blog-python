@@ -17,7 +17,7 @@
 	<ul>
 	{% for tag in tag_cloud %}
 
-	   <span  class="tag-{{ tag.1 }}" >
+	   <span  class="tag-{{ tag.2 }}" >
 		<a style="color: #ffffff; text-decoration: none;" href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}  </a>
 	  </span>
 	{% endfor %}

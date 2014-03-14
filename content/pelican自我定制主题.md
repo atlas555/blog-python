@@ -15,9 +15,10 @@ pelican的静态博客有很多[博客主题][1]的，比如我还是比较喜�
 我设计的博客结构采用div+css，这个结构比较好驾驭，随便找本书看看这方面的知识，很容易掌握（注意不是精通），对于一个搞后台开发的人来说，前端美化不拿手，怎么办呢，这个好解决，你上google或者baidu一艘，静态博客模板，比如这个<http://www.mianfeimoban.com>，一搜一大堆，当然这些模板只有一个index.html和一个css的文件。这个已经足以！
 
 比我我现在的网站主页就是我选择比较喜欢的一款，原来样例如下：
-![blog-zhangxiaolong.org](http://d.pcs.baidu.com/thumbnail/3aa0e8a48bbe8b480c5007f7dd110513?fid=3741478698-250528-2225970177&time=1387788992&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-jJ%2F6gu8T8sMzm8HJicUyxDWdXr4%3D&rt=sh&expires=8h&r=697336765&sharesign=unknown&size=c850_u580&quality=100)
 
-下载地址如下：<http://yun.baidu.com/share/link?shareid=4199296242&uk=3741478698>
+<img src="http://ww4.sinaimg.cn/mw690/b7ba225djw1eedvk5q83hj20sg0h7wif.jpg" alt="zhangxiaolong.org" title="灰色世界" width="500"  />
+
+下载地址如下：[灰色世界设计](http://vdisk.weibo.com/s/dhRlxPvqHmWsl)
 
 下载自己喜欢的模板之后，就是大刀阔斧的修改啦！
 
